@@ -1,6 +1,8 @@
-name: Todo-Project Integration
+name: CI React
 
 on:
+  push:
+    branches: ['main']
   pull_request:
     branches: ['main']
 
