@@ -11,6 +11,6 @@ export function removeTodo(todos, id) {
 
 export function changeStatus(todos, id) {
   return todos.map((todo) =>
-    todo.id === id ? { ...todo, done: !todo.done } : todo
+    todo.id === id ? {...todos, done: !todo.done} : todo
   );
 }
